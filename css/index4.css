@@ -1,0 +1,347 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*font*/
+@font-face {
+	font-family: "kaushan";
+	src: url(../fonts/kaushanscript-regular-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'open_sanslight_italic';
+    src: url('OpenSans-LightItalic-webfont.woff') format('woff'),
+        font-weight: normal;
+    	font-style: normal;
+
+}
+
+
+/*style utama*/
+body {
+	margin: 0;
+	padding: 0;
+	
+	background-image: url(../img/bg/pipes.jpg);
+
+}
+ul {
+	list-style: none;
+}
+h1	{
+	font:18px/36px 'kaushan', 'Arial Narrow', arial, sans-serif;
+	font-size: 50px;
+	margin: 50px 0;
+	text-align: center;
+	text-shadow: 3px 3px 8px black;
+	margin-top: 100px;
+}
+
+.top-bar {
+	position: fixed;
+	background-color: rgba(95, 95, 95, .5);
+	height: 50px;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+.instagram {
+	background-color: gold;
+	float: left;
+   height: 30px;
+   width: 30px;
+   position: absolute;
+   left: 150px;
+   top: 10px;
+   border-radius: 50%;
+   background-size:auto;
+   background-image: url(../img/medsos/instagram.png);
+   box-shadow: 0px 0px 0px 0px black;
+   transition: .5s;
+}
+.instagram:hover {
+	box-shadow: 5px 0px 0px 0px grey;
+	margin-left: 5px;
+
+}
+.facebook {
+	background-color: gold;
+	float: left;
+   height: 30px;
+   width: 30px;
+   position: absolute;
+   left: 200px;
+   top: 10px;
+   border-radius: 50%;
+   background-size:auto;
+   background-image: url(../img/medsos/facebook.png);
+   box-shadow: 0px 0px 0px 0px black;
+   transition: .5s;
+}
+.facebook:hover {
+	box-shadow: 5px 0px 0px 0px grey;
+	margin-left: 5px;
+}
+.twitter {
+	background-color: gold;
+	float: left;
+   height: 30px;
+   width: 30px;
+   position: absolute;
+   left: 250px;
+   top: 10px;
+   border-radius: 50%;
+   background-size:auto;
+   background-image: url(../img/medsos/twitter.png);
+   box-shadow: 0px 0px 0px 0px black;
+   transition: .5s;
+}
+.twitter:hover {
+	box-shadow: 5px 0px 0px 0px grey;
+	margin-left: 5px;
+}
+.youtube {
+	background-color: gold;
+	float: left;
+   height: 30px;
+   width: 30px;
+   position: absolute;
+   left: 300px;
+   top: 10px;
+   border-radius: 50%;
+   background-size:auto;
+   background-image: url(../img/medsos/youtube.png);
+   box-shadow: 0px 0px 0px 0px black;
+   transition: .5s;
+}
+.youtube:hover {
+	box-shadow: 5px 0px 0px 0px grey;
+	margin-left: 5px;
+
+}
+
+.top-bar ul li {
+	display: inline-block;
+	float: right;
+	
+
+}
+.top-bar:after {
+	content: '';
+	display: block;
+	clear: both;
+
+} 
+.top-bar ul li a {
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	padding: 17px 10px;
+	
+}
+.top-bar ul li a:hover {
+	color: white;
+	background-color:rgba(192, 192, 192, .5);
+}
+
+.container {
+	width: 1000px;
+	background-color:#fff;
+	margin: auto;
+	padding: 20px;
+	box-shadow: 0 0 3px 3px rgba(158, 175, 163, .5);
+	border-radius: 10px;
+
+}
+.gallery li {
+	border: 2px solid #666;
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+	float: left;
+	position: relative;
+	margin: 5px 35px;
+}
+
+.gallery li,
+.gallery li span {
+	border-radius: 50%;
+}
+
+
+.gallery li span {
+	font-family:'open_sanslight_italic';
+	display: block;
+	width: 120px;
+	height: 120px;
+	background-color: rgba(200, 200, 200, .5);
+	text-align: center;
+	line-height: 120px;
+	position: absolute;
+	top: 0;
+	color: rgba(0,128,128,1);
+	text-shadow: 1px 1px 4px white;
+	opacity: 0;
+	transition: .3s;
+	transform: scale(0) rotate(0);
+}
+.gallery li a:hover span {
+	opacity: 1;
+	transform: scale(1) rotate(360deg);
+}
+
+.clear {
+	clear: both;
+}
+
+.overlay {
+	width: 0;
+	height: 0;
+	position: fixed;
+	top: 0;
+	right: 0;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0);
+	z-index: 999;
+	transition: 1s;
+	text-align: center;
+	padding: 90px 0;
+}
+.overlay:target {
+	width: auto;
+	height: auto;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .5);
+}
+.overlay img {
+	max-height: 100%;
+	box-shadow: 0 0 3px 3px rgba(0, 0, 0, .3);
+}
+.overlay:target img {
+	animation: fadetombol .5s;
+}
+
+.overlay .close {
+	text-decoration: none;
+	color: white;
+	position: absolute;
+	bottom: 50px;
+	margin-left: 118px;
+	background-color:rgba(200, 200, 200, .5);
+	border-radius: 20%;
+	line-height: 2px;
+	padding: 15px;
+	border: 1px solid white;
+	box-shadow: 0 0 3px 3px rgba(0, 0, 0, .3);
+	opacity: 0;
+}
+.overlay:target .close {
+	animation: upclose 1s 1s forwards;
+}
+
+.overlay:target .next,
+.overlay:target .prev {
+	animation: fadetombol 1s 1s forwards;
+	
+}
+.next,.prev {
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/thumbnail/);
+	position: absolute;
+	top: 45%;
+	margin-left: 15px;
+	opacity: 0;
+}
+
+.prev {
+	background-image: url(../img/thumbnail/);
+	margin-left: -70px;
+}
+
+
+
+@keyframes fadetombol {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+
+
+
+/*animasi background full*/
+@keyframes zoomdanfade {
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes upclose {
+	0% {
+		opacity: 0;
+		bottom: 0;
+	}
+	100% {
+		opacity: 1;
+		bottom: 50px;
+	}
+}
